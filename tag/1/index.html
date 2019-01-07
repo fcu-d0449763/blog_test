@@ -1,7 +1,7 @@
-
-
+ 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>飛飛</title>
 
@@ -10,176 +10,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/pace.css">
-    <link rel="stylesheet" href="/static/css/custom.css">
-    <link rel="stylesheet" href="/static/css/highlights/github.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 
     <style>
-        span.highlighted {
-            color: red;
+        * {
+            font-family: 微軟正黑體, Verdana, Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+        }
+        
+        .navbar-custom {
+            background-color: #fff;
+            -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+        }
+        /* change the brand and text color */
+        
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: #000000;
+        }
+        /* change the link color */
+        
+        .navbar-custom .navbar-nav .nav-link {
+            color: rgba(0, 0, 0, .5);
+        }
+        /* change the color of active or hovered links */
+        
+        .navbar-custom .nav-item.active .nav-link,
+        .navbar-custom .nav-item:hover .nav-link {
+            color: rgba(0, 0, 0, .5);
+        }
+        
+        a {
+            color: #212529;
+        }
+        
+        a:hover,
+        a:active {
+            color: #212529;
+            text-decoration-color: #212529;
+        }
+        
+        .text-red,
+        .hover-text-red:hover {
+            color: #f44336!important;
         }
     </style>
 
     <!-- js -->
-    <script src="/static/js/jquery-2.1.3.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/pace.min.js"></script>
-    <script src="/static/js/modernizr.custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-<div class="container">
-    <header id="site-header">
-        <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-8">
-                <div class="logo">
-                    <h1><a href="/"><b>飛飛</a></h1>
-                </div>
-            </div><!-- col-md-4 -->
-            <div class="col-md-8 col-sm-7 col-xs-4">
-                <nav class="main-nav" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="trigger-overlay" class="navbar-toggle">
-                            <span class="ion-navicon"></span>
-                        </button>
-                    </div>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom ">
+        <a class="navbar-brand" href="/">飛飛</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="cl-effect-11"><a href="/" data-hover="首頁">首頁</a></li>
-                            <!--li class="cl-effect-11"><a href="#" data-hover="文章">文章</a></li-->
-                            <!--li class="cl-effect-11"><a href="#" data-hover="關於">關於</a></li-->
-                            <!--li class="cl-effect-11"><a href="#" data-hover="聯系">聯系</a></li-->
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
 
-            </div><!-- col-md-8 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <i class="fa fa-home"></i> blog</a>
+                </li>
+
+                <!-- <li class="nav-item">
+		<a class="nav-link" href="#">
+		Github</a>
+	  </li> -->
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li> -->
+
+
+            </ul>
         </div>
-    </header>
+    </nav>
+    <br>
+
+
+    <div class="content-body">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8">
+                     
+<div class="bg-white border mt-4 mb-2">
+    <ul class="list-group list-group-flush">
+        
+        <li class="list-group-item">
+
+            <div>
+                2019年1月6日
+                <a class="font-weight-bold" href="/post/1/">
+                    <h3 class="text-red 
+                    hover-text-red">資安補帖─Day1─補帖簡介&amp;目標&amp;規劃</h3>
+                </a>
+            </div>
+
+
+            <div class="text-truncate text-muted">
+                <p>為了組隊，跟大家一起進行鐵人賽...</p>
+
+                <a href="/post/1/">繼續閱讀 <span class="meta-nav">→</span></a>
+
+            </div>
+            <div class="entry-meta">
+                <span class="text-muted">
+                        分類：<a href="/category/1/">2019鐵人賽</a></span>
+
+            </div>
+
+        </li>
+        
+    </ul>
 </div>
 
+                </main>
 
-<div class="content-body">
-    <div class="container">
-        <div class="row">
-            <main class="col-md-8">
-                
-    
+                <div class="col-md-4">
+                     
 
-    
-        <article class="post post-1">
-            <header class="entry-header">
-                <h1 class="entry-title">
-                    <a href="/post/1/">資安補帖─Day1─補帖簡介&amp;目標&amp;規劃</a>
-                </h1>
-                <div class="entry-meta">
-                    <span class="post-category">
-                        <a href="/category/1/">2019鐵人賽</a></span>
-                    <span class="post-date"><a href="#"><time class="entry-date"
-                                                              datetime="2019年1月6日 23:18">2019年1月6日 23:18</time></a></span>
-                    <span class="post-author"><a href="#">feifei</a></span>
-                </div>
-            </header>
-            <div class="entry-content clearfix">
-                <p>資安補帖─Day1─補帖簡介&amp;amp;目標&amp;amp;規劃前提為了組隊，跟大家一起進行鐵人賽，所以把之前...</p>
-                <div class="read-more cl-effect-14">
-                    <a href="/post/1/" class="more-link">繼續閱讀 <span class="meta-nav">→</span></a>
-                </div>
-            </div>
-        </article>
-    
-
-    
-
-    
-    
-
-            </main>
-            <aside class="col-md-4">
-                
-                
-                <div class="widget widget-recent-posts">
-                    <h3 class="widget-title">最新文章</h3>
-                    
-                    <ul>
+                    <h4 class="mt-4 mb-2 font-weight-bold">最新文章</h4>
+                    <div class="bg-white border">
                         
-                            <li>
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item text-truncate">
+                                <a href="/post/2/">Prolog</a>
+                            </li>
+                            
+                            <li class="list-group-item text-truncate">
                                 <a href="/post/1/">資安補帖─Day1─補帖簡介&amp;目標&amp;規劃</a>
                             </li>
+                            
+                        </ul>
+                    </div>
+
+                    <h4 class="mt-4 mb-2 font-weight-bold">歸檔</h4>
+                    <div class="bg-white border">
                         
-                    </ul>
-                </div>
-                <div class="widget widget-archives">
-                    <h3 class="widget-title">歸檔</h3>
-                    
-                    <ul>
-                        
-                            <li>
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item text-truncate">
                                 <a href="/archives/2019/1/">2019
                                     年 1 月</a>
                             </li>
-                        
-                    </ul>
-                </div>
+                            
+                        </ul>
+                    </div>
 
-                <div class="widget widget-category">
-                    <h3 class="widget-title">分類</h3>
-                    
-                    <ul>
+
+                    <h4 class="mt-4 mb-2 font-weight-bold">分類</h4>
+                    <div class="bg-white border">
                         
-                            <li>
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item text-truncate">
                                 <a href="/category/1/">2019鐵人賽 <span
                                         class="post-count">(1)</span></a>
                             </li>
-                        
-                    </ul>
-                </div>
+                            
+                            <li class="list-group-item text-truncate">
+                                <a href="/category/2/">程式語言 <span
+                                        class="post-count">(1)</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
 
-                <div class="widget widget-tag-cloud">
-                    <h3 class="widget-title">標籤雲</h3>
-                    
-                    <ul>
+
+                    <h4 class="mt-4 mb-2 font-weight-bold">標籤雲</h4>
+                    <div class="bg-white border">
                         
-                            <li>
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item text-truncate">
                                 <a href="/tag/1/">鐵人賽</a>
                             </li>
-                        
-                    </ul>
+                            
+                            <li class="list-group-item text-truncate">
+                                <a href="/tag/2/">Prolog</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
                 </div>
 
-
-            </aside>
-        </div>
-    </div>
-</div>
-<footer id="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="copyright">&copy 2019 - 飛飛
-                </p>
             </div>
         </div>
     </div>
-</footer>
+    <footer id="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright">&copy 2019 - 飛飛
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<!-- Mobile Menu -->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="/">首頁</a></li>
-            <!-- li><a href="#">文章</a></li-->
-            <!-- li><a href="#">關於</a></li-->
-            <!-- li><a href="#">聯系</a></li-->
-        </ul>
-    </nav>
-</div>
 
-<script src="/static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>
 
 </body>
+
 </html>
